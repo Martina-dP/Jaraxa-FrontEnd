@@ -1,0 +1,9 @@
+.all {
+    height: 100vh;
+}
+
+.body {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}

@@ -4,6 +4,7 @@ import {
 
 const initialState = {
     medecine : {},
+    totalResults: []
     };
 
 function rootReducer (state = initialState, { type, payload }) {
@@ -12,6 +13,7 @@ function rootReducer (state = initialState, { type, payload }) {
             return {
                 ...state,
                 medecine : payload.results,
+                totalResults : payload.meta.results.total, 
             }
         default: return state;
     }
